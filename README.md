@@ -10,7 +10,7 @@
 ### Building
 - configure with:
 ```
-`LIBS="-ldl" ./configure                                                  \
+LIBS="-ldl" ./configure                                                  \
               --disable-fortran                                           \
               --disable-shared                                            \
               --with-zlib=/Path/zlib/,/Path/zlib/                         \
