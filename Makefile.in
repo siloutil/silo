@@ -363,7 +363,13 @@ DIST_SUBDIRS = . config config-site \
   svn_bin docs src tests tools SiloWindows
 
 all: config.h
-	$(MAKE) $(AM_MAKEFLAGS) all-recursive
+	$(MAKE) $(AM_MAKEFLAGS) all-recursive patch
+
+patch:
+	@echo "Patching the checksums bash file"
+	sed -i "1c \
+	"#!/bin/bash" \
+	" tests/checksums
 
 .SUFFIXES:
 am--refresh:
