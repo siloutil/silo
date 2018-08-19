@@ -1,30 +1,5 @@
 # silo
-
-## Comments for siloutil
-- A copy of the silo source, version 4.10.2 for compatibility and reference
-- We need libsiloh5.a to build the silo library, it is linked in the final building of siloutil
-
-### Prerequisites
-- A C99 or subsequent compliant compiler
-
-### Building
-- configure with:
-```
-LIBS="-ldl" ./configure                                                  \
-              --disable-fortran                                           \
-              --disable-shared                                            \
-              --with-zlib=/Path/zlib/,/Path/zlib/                         \
-              --with-hdf5=/Path/hdf5/hdf5/include/,/Path/hdf5/hdf5/lib/
-```
-- `make all; make install`
-- The libsiloh5.a will be in the lib/ directory, headers will be in include/
-- Tests are in test/ directory
-*`make check` starts outputting gibberish at some point, run each test individually*
-
-### Updating
-- Look for new versions silo's [webpage](https://wci.llnl.gov/simulation/computer-codes/silo)
-- Build silo and run its tests
-- Rebuild siloutil and run its unit tests
+A copy of the silo source, version 4.10.2 for compatibility and reference
 
 ## Original README
 
